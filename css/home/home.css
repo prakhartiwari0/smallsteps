@@ -482,7 +482,8 @@ a.knowMoreAboutServiceLink:active  {
 	align-items: center;
 	flex-direction: column;
 
-	background-color: #0d63a0ad;
+	/* background-color: #0d63a0ad; */
+	background-color: var(--carolinaBlue);
 
 	padding: 1rem;
 

@@ -78,7 +78,7 @@ function updateReview(index) {
     const review = reviewsData[index];
     reviewText.textContent = review.reviewText;
     reviewerInfo.textContent = `${review.name}, ${review.age}, ${review.degree}`;
-    profilePic.src = `assets/reviewersPics/${review.profilePic}.png`;
+    profilePic.src = `assets/reviewersPics/${review.profilePic}.webp`;
     profilePic.alt = `${review.name} profile picture`;
 }
 

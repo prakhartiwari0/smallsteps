@@ -1064,3 +1064,10 @@ header button {
 	width: 50%;
 }
 }
+
+
+@media only screen and (min-width: 1500px) {
+	:root{
+		font-size: 22px;
+	}
+}

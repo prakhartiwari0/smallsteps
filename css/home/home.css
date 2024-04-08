@@ -555,11 +555,14 @@ a.knowMoreAboutServiceLink:active  {
 .faqSection {
 	justify-content: center;
 	align-items: center;
+
+	background-color: var(--prussianBlue);
 }
 .faqSection h2 {
 	font-size: 2rem;
 	text-align: center;
 	margin-bottom: 1rem;
+	color: var(--brightWhite);
 }
 .faqSection div {
 	display: flex;
@@ -574,11 +577,12 @@ a.knowMoreAboutServiceLink:active  {
 
 .faqs-wrapper details {
 	border-radius: 1rem;
-
+	
 	margin-block: 0.5rem;
 	padding: 0.2rem;
 	border: 0.2rem var(--prussianBlue) transparent;
 	
+	background-color: var(--brightWhite);
 	
 	line-height: 1.8rem;
 	transition: 0.1s ease;

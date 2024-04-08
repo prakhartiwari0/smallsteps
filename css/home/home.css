@@ -129,7 +129,7 @@ header {
 }
 
 header h1 {
-	font-size: 4.5rem;
+	font-size: 3rem;
 	text-wrap: wrap;
 	font-weight: 800;
 	color: var(--prussianBlue);
@@ -139,6 +139,7 @@ header h1 {
 	margin-top: 2rem;
 }
 header h1 span {
+	font-size: 4.5rem;
 	color: var(--celestialBlue);
 	text-shadow: 0.3rem 0.3rem 0rem var(--prussianBlue);
 
@@ -642,11 +643,13 @@ a.knowMoreAboutServiceLink:active  {
 .contactScheduleSection h2 {
   font-size: 3rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .contactScheduleSection h3 {
-  font-size: 1.3rem;
-  color: var(--charcoal);
+	font-size: 1.3rem;
+	color: var(--charcoal);
+	text-align: center;
 }
 
 
@@ -701,8 +704,15 @@ a.knowMoreAboutServiceLink:active  {
 .socials-wrapper {
 	display: flex;
 	width: 80%;
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	margin-top: 2rem;
+}
+.socials-wrapper > div {
+	display: flex;
+	/* flex-direction: column; */
 }
 .socialIcon-wrapper{
   display: flex;

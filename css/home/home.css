@@ -3,7 +3,7 @@ body {
 	position: relative;
 	/* padding: .2rem; */
 
-	height: 200rem;
+	/* height: 200rem; */
 	overflow-x: hidden;
 
 	scroll-behavior: smooth;
@@ -70,7 +70,7 @@ nav {
 }
 .logoImage {
 	background-color: var(--white);
-	padding: 0.5rem;
+	/* padding: 0.5rem; */
 	border-radius: 1rem;
 	width: 20%;
 	border: 0.2rem var(--prussianBlue) solid;
@@ -100,8 +100,8 @@ nav {
 
 .navPagesLinks a:active,
 .navPagesLinks a:hover {
-	border-top: 0.2rem var(--white) solid;
-	border-bottom: 0.2rem var(--white) solid;
+	border-top-color:var(--white);
+	border-bottom-color: var(--white);
 }
 
 /* ============= Header ============== */
@@ -119,7 +119,7 @@ header {
 
 	padding: 1rem;
 
-	min-height: 100vh;
+	/* min-height: 100vh; */
 
 	/* background-image: url('../../assets/hero_page_image-min.jpg'); */
 	background-image: url('../../assets/studying_thinking_illustration.png');
@@ -139,7 +139,7 @@ header h1 {
 	margin-top: 2rem;
 }
 header h1 span {
-	font-size: 4.5rem;
+	font-size: 2em;
 	color: var(--celestialBlue);
 	text-shadow: 0.3rem 0.3rem 0rem var(--prussianBlue);
 
@@ -163,15 +163,19 @@ header button {
 }
 
 .heroImage {
-	width: 250%;
+	display: none;
+	width: 100%;
 	position: absolute;
+	right: -40%;
+	top: 7rem;
 
-	z-index: -1;
+	/* z-index: -1; */
 
-	border-radius: 20%;
+	border-radius: 100%;
 	/* right: -30rem; */
 
-	opacity: 0.4;
+	opacity: 0.9;
+	box-shadow: -.2rem -.5rem .5rem 0rem rgba(0, 0, 0, 0.116);
 }
 
 /* ================ Sections ================ */
@@ -289,8 +293,12 @@ hr.sectionDivider {
 .services_Section h2{
 	z-index: 1;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-shadow: 0.2rem 0.2rem 0rem var(--biceBlue);
+	font-family: var(--handwriting-font-family);
+
+	margin-bottom: 2rem;
+
 }
 
 .servicePackages-wrapper{
@@ -454,7 +462,11 @@ a.knowMoreAboutServiceLink:active  {
 	align-items: center;
 }
 
-.reviewSection h2 {}
+.reviewSection h2 {
+	font-size: 3rem;
+	font-family: var(--handwriting-font-family);
+	margin-bottom: 2rem;
+}
 
 .reviewsWhole-wrapper {
 	display: flex;
@@ -489,7 +501,7 @@ a.knowMoreAboutServiceLink:active  {
 	width: 100%;
 	border-radius: 100%;
 	box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.5);
-	border: .2rem solid var(--prussianBlue);
+	border: .5rem solid var(--prussianBlue);
 }
 
 .reviewText-wrapper {
@@ -886,4 +898,169 @@ footer {
 /* Desktop Monitors Responsiveness */
 
 @media only screen and (min-width: 1280px) {
+	:root {
+		font-size: 16px;
+	}
+
+
+	button.menuButton {
+		display: none;
+	}
+	.topBar{
+		background-color: transparent;
+	}
+
+	.logoImage-wrapper {
+		/* flex: 0; */
+		/* width: 1rem; */
+	}
+	.logoImage {
+		max-width: 35%;
+		border: none;
+		box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.212);
+		margin-top: 1rem;
+		margin-left: 1rem;
+		transition: .2s ease;
+	}
+
+	.logoImage:hover {
+		/* transform: rotate3d(30deg); */
+		transform: rotate(3deg) scale(1.2);
+		cursor: pointer;
+		transition: .2s ease;
+
+	}
+	nav{
+	overflow-y: auto;
+		display: flex !important;
+		position: static;
+		/* z-index: 0; */
+		height: auto;
+		width: auto;
+
+		background-color: transparent;
+		border: none;
+	}
+
+	.navPagesLinks{
+		flex-direction: row;
+		width: 100%;
+	}
+	.navPagesLinks a {
+		font-size: 1.2em;
+		border: none;
+		color: var(--prussianBlue);
+		margin-inline: 1rem;
+	}
+	.topBar{
+
+	}
+
+
+	header{
+		padding-inline: 3rem;
+		background-image: none;
+		/* background-size: cover; */
+	}
+	.heroImage{
+		display: flex;
+	}
+
+	header h1 {
+		font-size: 3.5rem;
+		max-width: 60%;
+	}
+header button {
+	font-size: 2.5rem;
+	/* align-self: baseline; */
+}
+
+	section{
+		margin-block: 3rem;
+		padding: 4rem;
+	}
+
+	hr:not(.dotted){
+		display: none;
+	}
+
+
+	/* About Section */
+	.aboutSectionPart {
+		/* justify-content: space-between; */
+		flex-direction: row;
+	}
+	.aboutSectionPart:nth-of-type(2n) {
+		flex-direction: row-reverse;
+	}
+.aboutSPImage-wrapper {
+	max-width: 30%;
+	margin-inline: 2rem;
+	transition: .4s ease;
+}
+.aboutSPImage-wrapper:hover {
+	transform: scale(1.01);
+	transition: .4s ease;
+}
+
+.aboutSectionPart .aboutSPText-wrapper {
+	background-color: var(--white);
+	border-radius: 1rem;
+	max-width: 50%;
+	padding: 2rem;
+}
+
+
+
+	/* Services Section */
+	.services_Section{
+		min-height: 100vh;
+	}
+.services_Section h2{
+	font-size: 4rem;
+}
+	.servicePackages-wrapper{
+	flex-direction: row;
+	align-items: baseline;
+
+	}
+
+	.eachService-wrapper {
+		margin-inline: 1rem;
+		min-height: 100%;
+		flex: 1;
+	}
+
+
+
+
+	/* Reviews Section */
+	.reviewSection{
+		flex-direction: row;
+	}
+	.reviewSection h2 {
+		font-size: 4rem;
+		font-style: italic;
+		margin-inline: 4rem;
+	}
+
+	.reviewsWhole-wrapper {
+
+		flex-direction: column;
+	}
+
+	.review-wrapper {
+	align-items: baseline;
+	}
+	.reviewerPicture-wrapper {
+		width: 20%;
+	}
+
+
+
+
+	/* FAQs Section */
+.faqs-wrapper {
+	width: 50%;
+}
 }

@@ -473,7 +473,9 @@ a.knowMoreAboutServiceLink:active  {
 
 	padding: 1rem;
 
-	border-radius: 92% 8% 83% 17% / 19% 88% 12% 1% 
+	border-radius: 92% 8% 83% 17% / 19% 88% 12% 1%;
+    box-shadow: -.6rem -.4rem 0rem .1rem var(--prussianBlue);
+
 }
 
 .reviewerPicture-wrapper {
@@ -523,6 +525,8 @@ a.knowMoreAboutServiceLink:active  {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	margin-top: 1rem;
 }
 .reviewControls-wrapper button{
 	margin-inline: .5rem;

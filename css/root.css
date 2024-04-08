@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+  color: #1b4353;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+:root{
+  
+  --font-family: "Poppins", sans-serif;
+	--font-family: 'Montserrat', sans-serif;
+
+  font-family: var(--font-family);
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+
+	/* Color Theme */
+
+	--prussianBlue: #173753;
+	--carolinaBlue: #6daedb;
+	--celestialBlue: #2892d7;
+	--charcoal: #1b4353;
+	--biceBlue: #1d70a2;
+
+    --brightWhite:#fdfdfd;
+    --white:#f7f7f7;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* Buttons Default Styles */
+
+button.regularButton{
+    background-color: var(--white);
+    color: var(--prussianBlue);
+    box-shadow: .25rem .25rem 0rem .01rem var(--prussianBlue);
+    
+    border: .2rem solid var(--prussianBlue);
+    border-radius: .5rem;
+    padding: .4rem;
+    /* font-size: 1.2rem; */
+	font-family: var(--font-family);
+    font-weight: 600;
+    
+    cursor: pointer;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+}
+
+button.regularButton:active, button.regularButton:hover{
+    background-color: var(--prussianBlue);
+    box-shadow: .25rem .25rem 0rem .01rem var(--biceBlue);
+
+    color: var(--white);
+    transform: scale(.9);
+    transition: .1s ease;
+}
+
+
+/* Links Default Styles  */
+a{
+    color: var(--charcoal);
+    text-decoration: none;
+
+    opacity: .8;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+/* Other Elements Default Styles */
+
+
+::-moz-selection {
+  background: var(--prussianBlue);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--prussianBlue);
+  color: var(--white);
+  text-shadow: none;
+}
+
+
+hr.dotted{
+    border-top: .4rem var(--charcoal) dotted;
+    width: 8rem;
+    opacity: .3;
+    align-self: center;
+
+    margin-block: 1rem;
+}

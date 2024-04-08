@@ -55,6 +55,8 @@ nav {
 	background-color: var(--prussianBlue);
 
 	border: 0.6rem white solid;
+
+	overflow-y: scroll;
 }
 
 .logoImage-wrapper {
@@ -117,8 +119,8 @@ header {
 
 	min-height: 100vh;
 
-	/* background-image: url('/assets/hero_page_image-min.jpg'); */
-	background-image: url('assets/studying_thinking_illustration.png');
+	/* background-image: url('../../assets/hero_page_image-min.jpg'); */
+	background-image: url('../../assets/studying_thinking_illustration.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -465,11 +467,11 @@ a.knowMoreAboutServiceLink:active  {
 	align-items: center;
 	flex-direction: column;
 
-	background-color: #0d63a04b;
+	background-color: #0d63a0ad;
 
 	padding: 1rem;
 
-	border-radius: 92% 8% 83% 17% / 19% 88% 12% 81% 
+	border-radius: 92% 8% 83% 17% / 19% 88% 12% 1% 
 }
 
 .reviewerPicture-wrapper {
@@ -482,6 +484,7 @@ a.knowMoreAboutServiceLink:active  {
 	width: 100%;
 	border-radius: 100%;
 	box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.5);
+	border: .2rem solid var(--prussianBlue);
 }
 
 .reviewText-wrapper {
@@ -830,6 +833,15 @@ footer {
 .custom-shape-divider-bottom-1712505800 .shape-fill {
 	fill: #173753;
 } */
+
+/* Low resolution Tablets and iPads */
+@media only screen and (min-width: 320px) {
+	/* Style adjustments for viewports that meet the condition */
+
+	:root {
+		font-size: 14px;
+	}
+}
 
 /* Low resolution Tablets and iPads */
 @media only screen and (min-width: 767px) {

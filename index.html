@@ -10,6 +10,10 @@
 	<link rel="stylesheet"
 		  href="css/root.css" />
 	<link rel="stylesheet"
+		  href="css/commonElements.css" />
+	<link rel="stylesheet"
+		  href="css/commonMediaQueries.css" />
+	<link rel="stylesheet"
 		  href="css/home/home.css" />
 	<meta name="description"
 		  content="" />
@@ -41,11 +45,12 @@
 
 		<nav>
 			<div class="navPagesLinks">
-				<a href="#">About</a>
+				<a href="#about">About</a>
 				<a href="p/services.html">Services</a>
-				<a href="#">FAQs</a>
-				<a href="#">Contact</a>
-				<a href="#">Join</a>
+				<a href="#faqs">FAQs</a>
+				<a href="#reviews">Reviews</a>
+				<a href="#contact">Contact</a>
+				<!-- <a href="#">Join</a> -->
 			</div>
 		</nav>
 
@@ -100,7 +105,7 @@
 					 alt="" />
 			</div>
 			<div class="aboutSPText-wrapper">
-				<h2>What do we do at Small Steps Counseling?</h2>
+				<h2 id="about">What do we do at Small Steps Counseling?</h2>
 				<p>
 					We're here to help you find the <span class="highlightedText">support and guidance</span> you need
 					in a
@@ -194,7 +199,7 @@
 					  class="shape-fill"></path>
 			</svg>
 		</div>
-		<h2>Services we provide</h2>
+		<h2 id="services">Our Services</h2>
 
 		<div class="servicePackages-wrapper">
 
@@ -286,7 +291,7 @@
 	<hr class="sectionDivider">
 
 
-	<section class="reviewSection">
+	<section class="reviewSection" id="reviews">
 		<h2>People we have helped say this...</h2>
 
 
@@ -321,7 +326,7 @@
 
 	<section class="faqSection">
 
-		<h2>Frequently Asked Questions</h2>
+		<h2 id="faqs">Frequently Asked Questions</h2>
 
 		<div class="faqs-wrapper">
 
@@ -360,7 +365,7 @@
 	<hr class="sectionDivider">
 
 	<section class="contactScheduleSection">
-		<h2>Let's Connect!</h2>
+		<h2 id="contact">Let's Connect!</h2>
 
 
 		<!-- <div class="schedule-wrapper">
@@ -489,7 +494,7 @@
 
 		<div class="attributionText-wrapper">
 			<span class="attributionText">Website Created by <a href="https://www.heyprakhar.com"
-				   target="_blank">Prakhar Tiwari</a< /span>
+				   target="_blank">Prakhar Tiwari 🔱 Man of Creativity</a< /span>
 		</div>
 	</footer>
 
@@ -511,5 +516,6 @@
 
 </body>
 <script src="js/app.js"></script>
+<script src="js/home.js"></script>
 
 </html>

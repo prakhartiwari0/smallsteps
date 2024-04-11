@@ -1,0 +1,109 @@
+
+/* Low resolution Tablets and iPads */
+@media only screen and (min-width: 320px) {
+	/* Style adjustments for viewports that meet the condition */
+
+	:root {
+		font-size: 14px;
+	}
+}
+
+/* Low resolution Tablets and iPads */
+@media only screen and (min-width: 767px) {
+	/* Style adjustments for viewports that meet the condition */
+
+	:root {
+		font-size: 20px;
+	}
+
+	.aboutSPImage-wrapper img {
+		width: 60%;
+	}
+}
+
+/* Tablet iPads portrait mode max-width */
+@media only screen and (min-width: 1024px) {
+	:root {
+		font-size: 24px;
+	}
+}
+
+
+
+
+/* Desktop Monitors Responsiveness */
+
+@media only screen and (min-width: 1280px) {
+	:root {
+		font-size: 16px;
+	}
+
+
+    /* ==================== NavBar ======================= */
+
+
+
+	button.menuButton {
+		display: none;
+	}
+	.topBar{
+		background-color: transparent;
+	}
+
+	.logoImage-wrapper {
+		/* flex: 0; */
+		/* width: 1rem; */
+	}
+	.logoImage {
+		max-width: 35%;
+		border: none;
+		box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.212);
+		margin-top: 1rem;
+		margin-left: 1rem;
+		transition: .2s ease;
+	}
+
+	.logoImage:hover {
+		/* transform: rotate3d(30deg); */
+		transform: rotate(3deg) scale(1.2);
+		cursor: pointer;
+		transition: .2s ease;
+
+	}
+	nav{
+	overflow-y: auto;
+		display: flex !important;
+		position: static;
+		/* z-index: 0; */
+		height: auto;
+		width: auto;
+
+		background-color: transparent;
+		border: none;
+	}
+
+	.navPagesLinks{
+		flex-direction: row;
+		width: 100%;
+	}
+	.navPagesLinks a {
+		font-size: 1.2em;
+		border: none;
+		color: var(--prussianBlue);
+		margin-inline: 1rem;
+	}
+	.topBar{
+
+	}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1500px) {
+	:root{
+		font-size: 22px;
+	}
+}

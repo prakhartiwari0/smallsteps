@@ -689,7 +689,30 @@ a.knowMoreAboutServiceLink:active  {
 
 
 
+.registerForWebinar-wrapper{
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	transition: .2s ease;
 
+	z-index: 2;
+}
+
+.registerForWebinar-wrapper a{
+	background-color: var(--prussianBlue);
+	opacity: 1;
+	color: var(--brightWhite);
+	padding: 1rem;
+	border-radius: 1rem;
+
+	border: var(--carolinaBlue) .2rem solid;
+	box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.425);
+}
+.registerForWebinar-wrapper:hover{
+	transform: scale(1.1);
+	transition: .2s ease;
+
+}
 
 
 

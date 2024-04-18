@@ -27,12 +27,11 @@ section{
     border-radius: 1rem;
 }
 
-.webinarInfo-wrapper span{
+.webinarInfo-wrapper span:not(.highlightedText){
     display: block;
     margin-block: .5rem;
 }
-.webinarInfo-wrapper span:last-child,
-.webinarInfo-wrapper span:first-child{
+.webinarInfo-wrapper .italicizedSpan{
     margin-block: 1rem;
     opacity: .9;
     font-style: italic;

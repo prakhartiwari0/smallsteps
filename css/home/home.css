@@ -11,7 +11,7 @@ header {
 	display: flex;
 	flex-direction: column;
 
-	/* justify-content: center; */
+	justify-content: center;
 	/* align-items: center; */
 	position: relative;
 
@@ -68,9 +68,10 @@ header button {
 	width: 100%;
 	position: absolute;
 	right: -40%;
-	top: 7rem;
+	/* top: 7rem; */
+	top: 3%;
 
-	/* z-index: -1; */
+	z-index: -1;
 
 	border-radius: 100%;
 	/* right: -30rem; */
@@ -823,9 +824,19 @@ dialog img:hover {
 		width: 50%;
 	}
 
+	dialog .poster-wrapper {
+		width: 40%;
+	}
 	dialog img{
-		width: 50%;
+		width: 100%;
 	}
 	
 	
+}
+
+
+@media only screen and (min-width: 1400px) {
+	.heroImage{
+		/* top: 5%; */
+	}
 }

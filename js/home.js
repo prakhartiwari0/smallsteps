@@ -2,6 +2,13 @@
 
 let reviewsData = [
     {
+        name: "Rajesh Kumar",
+        age: 32,
+        degree: "Finance",
+        profilePic: "rajeshkumar32finance",
+        reviewText: "The career counseling sessions were extremely beneficial for me. They helped me understand my career aspirations and provided practical advice to achieve them. I'm now more confident about my career path."
+    },
+    {
         name: "Amit Patel",
         age: 28,
         degree: "Engineering",
@@ -14,13 +21,6 @@ let reviewsData = [
         degree: "MBA",
         profilePic: "priyasingh25mba",
         reviewText: "I'm extremely grateful to the team for their guidance. They provided valuable insights into various career options and helped me make informed decisions. Thanks to them, I'm now pursuing my dream career!"
-    },
-    {
-        name: "Rajesh Kumar",
-        age: 32,
-        degree: "Finance",
-        profilePic: "rajeshkumar32finance",
-        reviewText: "The career counseling sessions were extremely beneficial for me. They helped me understand my career aspirations and provided practical advice to achieve them. I'm now more confident about my career path."
     },
     {
         name: "Sneha Sharma",

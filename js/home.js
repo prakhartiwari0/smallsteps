@@ -72,3 +72,25 @@ previousButton.addEventListener('click', () => {
     updateReview(currentIndex);
 });
 
+
+
+
+
+// Open Webinar Poster Dialog
+
+const webinarPosterDialog = document.querySelector('.webinarPoster-dialog')
+
+webinarPosterDialog.showModal()
+
+const closeDialogButton = document.querySelector('.closeDialogButton')
+closeDialogButton.blur()
+
+closeDialogButton.addEventListener('click', ()=>{
+    webinarPosterDialog.close()
+    webinarPosterDialog.style.display = 'none'
+})
+
+const webinarPosterImage = document.querySelector('.webinarPosterImage')
+webinarPosterImage.addEventListener('click', ()=>{
+    // open('p/webinar.html', "_self")
+})
